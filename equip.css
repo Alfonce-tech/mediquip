@@ -1,0 +1,87 @@
+/* Section Styling */
+.tools-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.tools-section h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tools-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Tools Grid */
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Tool Container */
+.tool-container {
+    flex: 0 1 calc(33.333% - 40px); /* Each row contains 3 items */
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tool Images */
+.tool-container img {
+    width: 60%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Tool Information */
+.tool-container h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.tool-container p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tool-container {
+        flex: 0 1 calc(50% - 20px); /* Each row contains 2 items */
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-container {
+        flex: 0 1 100%; /* Each row contains 1 item */
+    }
+}
+  /* General body styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
